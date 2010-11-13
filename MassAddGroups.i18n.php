@@ -1,5 +1,5 @@
 <?php
-/** Internationalization messages file for Import User extension
+/** Internationalization messages file for MassUserRights extension
   *
   * @addtogroup Extensions
 */
@@ -7,7 +7,7 @@
 $messages = array();
 
 $messages['en'] = array(
-	'massaddgroups'                         => 'Mass user group management',
+	'massuserrights'                        => 'Mass user group management',
 	'massaddgroups-desc'                    => '[[Special:MassUserRights|Massively change groups]] in bulk from CSV-file; encoding: UTF-8',
 	'massaddgroups-uploadfile'              => 'Upload file',
 	'massaddgroups-form-caption'            => 'Input CSV-file (UTF-8)',

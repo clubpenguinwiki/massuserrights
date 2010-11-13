@@ -55,6 +55,7 @@ class SpecialMassAddGroups extends SpecialPage {
 		$filedata=explode("\n",rtrim(file_get_contents($fileinfo['tmp_name'])));
 		$output='<h2>'.wfMsg( 'massaddgroups-log' ).'</h2>';
 
+		$dbw->begin();
 		foreach ($filedata as $line=>$newuserstr) {
 			$newuserarray=explode(',', trim( $newuserstr ) );
 			if (count($newuserarray)<3) {
@@ -85,6 +86,7 @@ class SpecialMassAddGroups extends SpecialPage {
 			$summary['all']++;
 		}
 
+		$dbw->commit();
 		$output.='<b>'.wfMsg( 'massaddgroups-log-summary' ).'</b><br />';
 		$output.=wfMsg( 'massaddgroups-log-summary-all' ).' : '.$summary['all'].'<br />';
 		$output.=wfMsg( 'massaddgroups-log-summary-updated' ).' : '.$summary['updated'];

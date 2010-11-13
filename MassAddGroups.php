@@ -14,7 +14,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'MassAddGroups',
 	'author' => array('thepeskygeek'),
-	'url' => 'http://www.mediawiki.org/wiki/Extension:ImportUsers',
+	'url' => 'http://dev.clubpenguinwiki.info/wiki/MassUserRights',
 	'descriptionmsg' => 'massaddgroups-desc',
 );
 
