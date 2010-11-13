@@ -15,7 +15,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'MassAddGroups',
 	'author' => array('thepeskygeek'),
 	'url' => 'http://dev.clubpenguinwiki.info/wiki/MassUserRights',
-	'descriptionmsg' => 'massaddgroups-desc',
+	'descriptionmsg' => 'massuserrights-desc',
 );
 
 
